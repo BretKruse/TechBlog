@@ -8,7 +8,7 @@ const postData = [
     user_id: 1,
   },
   {
-    title: "iPhone 15 has beem released! What do you think about it?",
+    title: "iPhone 15 has been released! What do you think about it?",
     content:
       "The iPhone 15 has been released and it has a 10k display. It also has a 1000 megapixel camera. What do you think about it?",
     user_id: 2,
