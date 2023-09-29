@@ -76,7 +76,7 @@ router.get("/post/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
-router.get("/posts-comments", (req, res) => {
+router.get("posts-comments", (req, res) => {
   Post.findOne({
     where: {
       id: req.params.id,
@@ -99,7 +99,7 @@ router.get("/posts-comments", (req, res) => {
   })
     .then((dbPostData) => {
       if (!dbPostData) {
-        res.status(404).json({ message: "No post found with this id" });
+        res.status(404).json({ message: "No post found on this ID" });
         return;
       }
       const post = dbPostData.get({ plain: true });
