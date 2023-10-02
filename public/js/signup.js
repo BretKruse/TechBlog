@@ -2,7 +2,6 @@ async function signupFormHandler(event) {
   event.preventDefault();
 
   const username = document.querySelector("#username-sign-up").value.trim();
-  const email = document.querySelector("#email-sign-up").value.trim();
   const password = document.querySelector("#password-sign-up").value.trim();
 
   if (username && password) {
@@ -10,7 +9,6 @@ async function signupFormHandler(event) {
       method: "POST",
       body: JSON.stringify({
         username,
-        email,
         password,
       }),
       headers: { "Content-Type": "application/json" },
